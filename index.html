@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <title>Web Poster</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <style media="screen">
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="javascripts/all.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>    
+  </head>
+  <body>
+    <audio id="player" src="audio/player.mp3"></audio>
+    <audio id="player2" src="audio/player2.mp3"></audio>
+    <audio id="do" src="audio/do.mp3"></audio>
+    <audio id="re" src="audio/re.mp3"></audio>
+    <audio id="mi" src="audio/mi.mp3"></audio>
+    <audio id="fa" src="audio/fa.mp3"></audio>
+    <audio id="sol" src="audio/sol.mp3"></audio>
+    <audio id="lya" src="audio/lya.mp3"></audio>
+    <audio id="si" src="audio/si.mp3"></audio>
+    <audio id="do-1" src="audio/do-1.mp3"></audio>
+    <audio id="re-1" src="audio/re-1.mp3"></audio>
+    <audio id="fa-1" src="audio/fa-1.mp3"></audio>
+    <audio id="sol-1" src="audio/sol-1.mp3"></audio>
+    <audio id="lya-1" src="audio/lya-1.mp3"></audio>
+    <div class="workspace">
+      <div class="piano">
+        <div class="screen">
+          <div class="row">Привет! Это интерактивный веб-плакат. Здесь можно нажимать на кнопки, крутить контроллеры, дергать рычажки и даже слушать пластинку. Попробуйте все:) Привет! Э</div>
+          <!-- 203.2vw -->
+        </div>
+        <div class="block-tiles">
+          <div class="container-tiles">
+            <div class="tiles do1"></div>
+            <div class="tiles re1"></div>
+            <div class="tiles mi1"></div>
+            <div class="tiles fa1"></div>
+            <div class="tiles sol1"></div>
+            <div class="tiles lya1"></div>
+            <div class="tiles si1"></div>
+            <div class="tiles do2"></div>
+            <div class="tiles re2"></div>
+            <div class="tiles mi2"></div>
+            <div class="tiles fa2"></div>
+            <div class="tiles sol2"></div>
+            <div class="tiles lya2"></div>
+            <div class="tiles si2"></div>
+            <div class="tiles do3"></div>
+            <div class="tiles re3"></div>
+            <div class="tiles mi3"></div>
+            <div class="tiles fa3"></div>
+            <div class="tiles sol3"></div>
+            <div class="tiles lya3"></div>
+            <div class="tiles si3"></div>
+            <div class="tiles do4"></div>
+            <div class="tiles re4"></div>
+            <div class="tiles mi4"></div>
+          </div>
+        </div>
+        <div class="container-klavishi">
+          <div class="klavishi do1-1"></div>
+          <div class="klavishi re1-1"></div>
+          <div class="klavishi fa1-1"></div>
+          <div class="klavishi sol1-1"></div>
+          <div class="klavishi lya1-1"></div>
+          <div class="klavishi do1-2"></div>
+          <div class="klavishi re1-2"></div>
+          <div class="klavishi fa1-2"></div>
+          <div class="klavishi sol1-2"></div>
+          <div class="klavishi lya1-2"></div>
+          <div class="klavishi do1-3"></div>
+          <div class="klavishi re1-3"></div>
+          <div class="klavishi fa1-3"></div>
+          <div class="klavishi sol1-3"></div>
+          <div class="klavishi lya1-3"></div>
+          <div class="klavishi do1-4"></div>
+          <div class="klavishi re1-4"></div>
+        </div>
+      </div>
+      <div class="orange">
+        <div>
+          <div class="control">
+            <div class="polzunok"></div>
+          </div>
+          <div class="control">
+            <div class="polzunok"></div>
+          </div>
+          <div class="control">
+            <div class="polzunok"></div>
+          </div>
+        </div>
+        <div class="block-buttons">
+          <div class="container-buttons">
+            <div class="button1"></div>
+            <div class="button1"></div>
+            <div class="button1"></div>
+            <div class="button1"></div>
+            <div class="button1"></div>
+            <div class="button1"></div>
+            <div class="button1"></div>
+            <div class="button1"></div>
+            <div class="button1"></div>
+            <div class="button1 btnnone"></div>
+            <div class="button1 btnnone"></div>
+            <div class="button1 btnnone"></div>
+          </div>
+        </div>
+        <div class="shtuka"></div>
+        <div class="volume-container">
+          <div class="vol"><div></div></div>
+          <div class="vol"><div></div></div>
+          <div class="vol"><div></div></div>
+        </div>
+      </div>
+      <div class="player">
+        <div class="igla"></div>
+        <div class="mesto">
+          <div class="center"></div>
+        </div>
+        <div class="controller"></div>
+        <div class="shtuchka"></div>
+        <div class="kruzhochek">
+        </div>
+      </div>
+      <div class="boxes">
+        <div class="korobki"></div>
+        <div class="plastinka">
+        </div>
+      </div>
+      <div class="squaretool">
+        <div class="block-kvadratiki">
+          <div class="container-kvadratiki">
+            <div class="kvadratik kv1"></div>
+            <div class="kvadratik kv2"></div>
+            <div class="kvadratik kv3"></div>
+            <div class="kvadratik kv4"></div>
+            <div class="kvadratik kv5"></div>
+            <div class="kvadratik kv6"></div>
+            <div class="kvadratik kv7"></div>
+            <div class="kvadratik kv8"></div>
+            <div class="kvadratik kv9"></div>
+            <div class="kvadratik kv10"></div>
+            <div class="kvadratik kv11"></div>
+            <div class="kvadratik kv12"></div>
+            <div class="kvadratik kv13"></div>
+            <div class="kvadratik kv14"></div>
+            <div class="kvadratik kv15"></div>
+            <div class="kvadratik kv16"></div>
+            <div class="kvadratik kv17"></div>
+            <div class="kvadratik kv18"></div>
+            <div class="kvadratik kv19"></div>
+            <div class="kvadratik kv20"></div>
+            <div class="kvadratik kv21"></div>
+            <div class="kvadratik kv22"></div>
+            <div class="kvadratik kv23"></div>
+            <div class="kvadratik kv24"></div>
+            <div class="kvadratik kv25"></div>
+            <div class="kvadratik kv26"></div>
+            <div class="kvadratik kv27"></div>
+            <div class="kvadratik kv28"></div>
+            <div class="kvadratik kv29"></div>
+            <div class="kvadratik kv30"></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="knopka first"></div>
+          <div class="knopka second"></div>
+          <div class="knopka third"></div>
+          <div class="kruzhok"></div>
+        </div>
+      </div>
+      <div class="blue">
+        <div class="krug odin"></div>
+        <div class="krug dva"></div>
+        <div class="block-thingies">
+          <div class="container-thingies">
+            <div class="thingie th1"></div>
+            <div class="thingie th2"></div>
+            <div class="thingie th3"></div>
+            <div class="thingie th4"></div>
+          </div>
+        </div>
+        <div class="block-krutilki">
+          <div class="container-krutilki">
+            <div class="krutilka"></div>
+            <div class="krutilka"></div>
+            <div class="krutilka"></div>
+          </div>
+        </div>
+        <div class="ekran"></div>
+        <div class="block-rychagi">
+          <div class="container-rychagi">
+            <div class="rychag">
+              <div class="pip"></div>
+            </div>
+            <div class="rychag">
+              <div class="pip"></div>
+            </div>
+            <div class="rychag">
+              <div class="pip"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="kassety">
+        <div id="song1"></div>
+        <div class="kasseta il">
+          <div></div>
+        </div>
+        <div id="song2"></div>
+        <div class="kasseta yi">
+          <div></div>
+        </div>
+        <div id="song3"></div>
+        <div class="kasseta sam">
+          <div></div>
+        </div>
+        <div id="song4"></div>
+        <div class="kasseta sa">
+          <div></div>
+        </div>
+        <div id="song5"></div>
+        <div class="kasseta oh">
+          <div></div>
+        </div>
+        <div class="kasseta yuk">
+          <div></div>
+        </div>
+      </div>
+      <div class="dictophone">
+        <div class="kolesiko1"></div>
+        <div class="kolesiko2"></div>
+        <div class="bottom"></div>
+        <div class="knopochka1"></div>
+        <div class="knopochka2"></div>
+      </div>
+      <div class="paper">
+        <div class="list">
+          <div class="type-container1">
+            <div class="type1"> Белый снег,</div>
+          </div>
+          <div class="type-container2">
+            <div class="type2 none"> Серый лед...</div>
+          </div>
+        </div>
+      </div>
+      <div class="pencil"></div>
+      <div class="knopki">
+        <div class="screenon"></div>
+        <div class="block-knopochki">
+          <div class="container-knopochki">
+            <div class="knopochki kn1"></div>
+            <div class="knopochki kn2"></div>
+            <div class="knopochki kn3"></div>
+            <div class="knopochki kn4"></div>
+            <div class="knopochki kn5"></div>
+            <div class="knopochki kn6"></div>
+            <div class="knopochki kn7"></div>
+            <div class="knopochki kn8"></div>
+            <div class="knopochki kn9"></div>
+            <div class="knopochki kn10"></div>
+            <div class="knopochki kn11"></div>
+            <div class="knopochki kn12"></div>
+            <div class="knopochki kn13"></div>
+            <div class="knopochki kn14"></div>
+            <div class="knopochki kn15"></div>
+            <div class="knopochki kn16"></div>
+          </div>
+        </div>
+        <div class="button2"></div>
+        <div class="block-pugovki">
+          <div class="container-pugovki">
+            <div class="pugovka">
+              <div class="way"></div>
+              <div class="o"></div>
+            </div>
+            <div class="pugovka">
+              <div class="way"></div>
+              <div class="o"></div>
+            </div>
+            <div class="pugovka">
+              <div class="way"></div>
+              <div class="o"></div>
+            </div>
+          </div>
+        </div>
+        <div class="screenoff"></div>
+      </div>
+      <div class="footer">
+        <p>Дария Муракаева</p>
+        <p>Б22ДЗ10</p>
+        <div class="logo"></div>
+      </div>
+    </div>
+    <div class="ghost none"></div>
+    <div class="frame"></div>
+  </body>
+</html>

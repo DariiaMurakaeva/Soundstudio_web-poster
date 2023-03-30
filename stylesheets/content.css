@@ -1,0 +1,1092 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Gilroy', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #F0F0F0;
+    transition: all 0.3s;
+  }
+
+p {
+  font-size: 24pt;
+  font-weight: 500;
+  color: #060602;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.workspace {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 4.4vw;
+  padding-bottom: 0vw;
+  grid-template-columns: 21vw 20.7vw 13.2vw 21vw;
+  grid-template-rows: 21vw 21vw 21vw 21vw 13vw;
+  gap: 4.4vw 4.4vw;
+  grid-template-areas: 
+    "piano piano piano orange"
+    "player boxes boxes squaretool"
+    "blue blue kassety kassety"
+    "dictophone paper pencil knopki"
+    "footer footer footer footer";
+}
+
+.piano {
+  grid-area: piano;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F394BE;
+}
+
+.screen {
+  width: 11.4vw;
+  height: 5.5vw;
+  background-color: #F0F0F0;
+  position: relative;
+  margin: 1.4vw 26.3vw;
+  overflow: hidden;
+}
+
+.row {
+  position: absolute;
+  display: block;
+  margin-top: 1.4vw;
+  width: 203.2vw;
+  font-size: 2.5vw;
+  font-weight: 600;
+  color: #060602;
+  animation: row 15s linear infinite;
+}
+
+@keyframes row {
+  0% {right: -191vw;}
+  100% {right: calc(100% - 10.9vw);}
+}
+
+.block-tiles {
+  width: 60vw;
+  height: 12vw;
+  margin: -0.6vw 2vw;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 3;
+}
+
+.container-tiles {
+  background-color:#F394BE;
+}
+
+.tiles {
+  width: 2.5vw;
+  height: 100%;
+  margin-right: -0.4vw;
+  display: inline-block;
+  background-color: #F394BE;
+  border: .3vw solid #F0F0F0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.tiles:hover {
+  background-color: #F0F0F0;
+}
+
+.klavishi {
+  position: absolute;
+  top: 7.6vw;
+  width: 2vw;
+  height: 7vw;
+  background-color: #5092CE;
+  display: inline-block;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.container-klavishi div:nth-of-type(1) {
+  left: 5vw;
+}
+
+.container-klavishi div:nth-of-type(2) {
+  left: 7.5vw;
+}
+
+.container-klavishi div:nth-of-type(3) {
+  left: 12.2vw;
+}
+
+.container-klavishi div:nth-of-type(4) {
+  left: 14.6vw;
+}
+
+.container-klavishi div:nth-of-type(5) {
+  left: 17vw;
+}
+
+.container-klavishi div:nth-of-type(6) {
+  left: 21.7vw;
+}
+
+.container-klavishi div:nth-of-type(7) {
+  left: 24.2vw;
+}
+
+.container-klavishi div:nth-of-type(8) {
+  left: 28.8vw;
+}
+
+.container-klavishi div:nth-of-type(9) {
+  left: 31.2vw;
+}
+
+.container-klavishi div:nth-of-type(10) {
+  left: 33.6vw;
+}
+
+.container-klavishi div:nth-of-type(11) {
+  left: 38.4vw;
+}
+
+.container-klavishi div:nth-of-type(12) {
+  left: 40.8vw;
+}
+
+.container-klavishi div:nth-of-type(13) {
+  left: 45.5vw;
+}
+
+.container-klavishi div:nth-of-type(14) {
+  left: 47.9vw;
+}
+
+.container-klavishi div:nth-of-type(15) {
+  left: 50.3vw;
+}
+
+.container-klavishi div:nth-of-type(16) {
+  left: 55.1vw;
+}
+
+.container-klavishi div:nth-of-type(17) {
+  left: 57.4vw;
+}
+
+.klavishi:hover {
+  background-color: #F0F0F0;
+}
+
+.orange {
+  grid-area: orange;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #FF994D;
+}
+
+.control {
+  width: 1vw;
+  height: 7vw;
+  display: inline-block;
+  border: .3vw solid #060602;
+  margin-top: 1.5vw;
+}
+
+.control:nth-of-type(1) {
+  margin-left: 2.3vw;
+}
+
+.control:nth-of-type(2) {
+  margin-left: 1.4vw;
+}
+
+.control:nth-of-type(3) {
+  margin-left: 1.3vw;
+}
+
+.polzunok {
+  width: 1.4vw;
+  height: 0.7vw;
+  background-color: #028642;
+  margin-top: 1.5px;
+  cursor: grab;
+}
+
+.polzunok:nth-of-type(1) {
+  margin-left: -0.44vw;
+}
+
+.polzunok:nth-of-type(2) {
+  margin-left: -0.45vw;
+}
+
+.polzunok:nth-of-type(3) {
+  margin-left: -0.46vw;
+}
+
+.block-buttons {
+  width: 9.3vw;
+  height: 8vw;
+  margin: -7.2vw 10.4vw;
+  background-color: #FF994D;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button1 {
+  width: 2.5vw;
+  height: 1.8vw;
+  display: inline-block;
+  border: .3vw solid #060602;
+  margin-right: .4vw;
+}
+
+.button1:hover {
+  background-color: #060602;
+}
+
+.shtuka {
+  width: 6vw;
+  height: 6vw;
+  margin: 10vw 2.6vw;
+  background-image: url("../images/shtuka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.volume-container {
+  width: 100%;
+  float: right;
+}
+.vol {
+  width: 7vw;
+  height: 1.9vw;
+  border: .3vw solid #060602;
+}
+
+.vol div {
+  height: 1vw;
+  background-color: #5092CE;
+  animation: volume 1s ease infinite;
+}
+
+.vol div:nth-of-type(1) {  
+  margin: 0.1vw 0.1vw;
+}
+
+.vol:nth-of-type(1) {
+  margin: -16.5vw 12.1vw;
+}
+
+.vol div:nth-of-type(2) {  
+  margin: 0.1vw 0.1vw;
+}
+
+.vol:nth-of-type(2) {
+  margin: 17.4vw 12.1vw;
+}
+
+.vol:nth-of-type(3) {
+  margin: -16.6vw 12.1vw;
+}
+
+@keyframes volume {
+  0% {width: 0%;};
+  100% {width: 100%;};
+}
+
+.player {
+  grid-area: player;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+  border: 0.6vw solid #060602;
+  transition: all 0.3s;
+}
+
+.igla {
+  position: absolute;
+  z-index: 8;
+  top: 1vw;
+  left: -1.6vw;
+  width: 9vw;
+  height: 13vw;
+  background-image: url("../images/igla.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.fixed {
+  top: 0.4vw;
+  left: 0.6vw;
+  transform: rotate(-30deg);
+}
+
+.mesto {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+  border: 0.3vw solid #060602;
+  margin: 3vw 3vw;
+}
+
+.center {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background-color: #060602;
+  margin: 5.7vw 5.7vw;
+}
+
+.controller {
+  width: 7vw;
+  height: 1vw;
+  background-color: #F394BE;
+  margin: -20.6vw 9vw;
+}
+
+.shtuchka {
+  position: absolute;
+  top: 1.2vw;
+  left: 14vw;
+  width: 1.4vw;
+  height: 1.4vw;
+  background-color: #028642;
+  cursor: grab;
+}
+
+.kruzhochek {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+  border: 0.3vw solid #F394BE;
+  margin: 19vw 17vw;
+  cursor: pointer;
+}
+
+.pink {
+  background-color: #F394BE;
+  border: none;
+}
+
+.boxes {
+  grid-area: boxes;
+  background-color: #F0F0F0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.korobki {
+  width: 39vw;
+  height: 100%;
+  cursor: pointer;
+  background-image: url("../images/boxes.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 5;
+}
+
+.plastinka {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 50%;
+  background-image: url("../images/plastinka.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1vw;
+  left: 14vw;
+  z-index: 4;
+  transition: all 1s;
+  animation: spin 3s linear infinite;
+  animation-play-state: paused;
+  cursor: grab;
+}
+
+.move {
+  left: 24vw;
+}
+
+.top {
+  z-index: 6;
+  transition: none;
+}
+
+.squaretool {
+  grid-area: squaretool;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+  border: 0.6vw solid #060602;
+  transition: all 0.3s;
+}
+
+.block-kvadratiki {
+  width: 17vw;
+  height: 14vw;
+  margin: 1.3vw 2.1vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kvadratik {
+  width: 2.4vw;
+  height: 2.4vw;
+  display: inline-block;
+  margin-top: 0.3vw;
+  border: 0.3vw solid #060602;
+  cursor: pointer;
+}
+
+.kv1 {
+  border: 0.3vw solid #060602;
+}
+
+.kv31 {
+  border: none;
+  background-color: #028642;
+}
+
+.knopka {
+  width: 2vw;
+  height: 2vw;
+  background-color: #060602;
+}
+
+.first {
+  margin: 1vw 2vw;
+}
+
+.second {
+  margin: -3vw 6vw;
+}
+
+.third {
+  margin: 1vw 10vw;
+}
+
+.kruzhok {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  margin: -3.2vw 15.4vw;
+  background-color: #5092CE;
+  animation: kruzhok 0.7s linear alternate infinite;
+}
+
+@keyframes kruzhok {
+0% {opacity: 0%;};
+100% {opacity: 100%;};
+}
+
+.blue {
+  grid-area: blue;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #5092CE;
+}
+
+.krug {
+  width: 12vw;
+  height: 12vw;
+  background-image: url("../images/koltsa.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: zvuk 0.4s linear alternate infinite;
+  animation-play-state: paused;
+}
+
+.odin {
+  margin: 7vw 3vw;
+}
+
+.dva {
+  margin: -19vw 31.6vw;
+}
+
+.scale {
+  animation-play-state: running;
+}
+
+@keyframes zvuk {
+0% {transform: scale(1)}
+100% {transform: scale(1.2)}
+}
+
+.block-thingies {
+  width: 12.9vw;
+  height: 4vw;
+  margin: 1.4vw 2.7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.thingie {
+  width: 2vw;
+  height: 4vw;
+  display: inline-block;
+  margin-right: 1vw;
+  background-image: url("../images/knopka-vkl.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.th5 {
+  background-image: url("../images/knopka-vykl.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.block-krutilki {
+  width: 13vw;
+  height: 4vw;
+  margin: -5.3vw 32vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.krutilka {
+  width: 3vw;
+  height: 3vw;
+  display: inline-block;
+  margin-right: 1vw;
+  background-image: url("../images/krutilka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.ekran {
+  width: 10vw;
+  height: 6vw;
+  margin: 1.2vw 18.6vw;
+  background-color: #F394BE;
+}
+
+.block-rychagi {
+  width: 14.4vw;
+  height: 8.3vw;
+  margin: 2.4vw 17vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rychag {
+  width: 3vw;
+  height: 8.3vw;
+  margin-right: 1.6vw;
+  display: inline-block;
+  background-color: #028642;
+}
+
+.pip {
+  width: 3vw;
+  height: 2vw;
+  background-color: #060602;
+  margin-right: -1vw;
+  cursor: grab;
+}
+
+.kassety {
+  grid-area: kassety;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 7vw 2vw;
+  grid-template-areas: 
+    "il yi sam"
+    "sa oh yuk";
+  background-color: #F0F0F0;
+  transition: all 0.3s;
+}
+
+.kasseta {
+  cursor: pointer;
+}
+
+.kasseta div {
+  width: 5vw;
+  height: 2.6vw;
+  margin: 2vw 3.2vw;
+  background-image: url("../images/kasseta.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.il {
+  grid-area: il;
+  background-color: #028642;
+}
+
+.yi {
+  grid-area: yi;
+  background-color: #F394BE;
+}
+
+.sam {
+  grid-area: sam;
+  background-color: #5092CE;
+}
+
+.sa {
+  grid-area: sa;
+  background-color: #5092CE;
+}
+
+.oh {
+  grid-area: oh;
+  background-color: #FF994D;
+}
+
+.yuk {
+  grid-area: yuk;
+  background-color: #F0F0F0;
+  border: 0.6vw solid #060602;
+}
+
+#song1 {
+  position: absolute;
+}
+
+#song1 .popup1 {
+  position: absolute;
+  font-size: 1.9vw;
+  font-weight: 500;
+  color: #060602;
+  left: 1.3vw;
+  width: 7vw;
+  text-align: center;
+  opacity: 0;
+  animation: popup 0.5s ease-in;
+}
+
+#song2 {
+  position: absolute;
+}
+
+#song2 .popup2 {
+  position: absolute;
+  font-size: 1.9vw;
+  font-weight: 500;
+  color: #060602;
+  left: 14vw;
+  width: 10vw;
+  text-align: center;
+  opacity: 0;
+  animation: popup 0.5s ease-in;
+}
+
+#song3 {
+  position: absolute;
+}
+
+#song3 .popup3 {
+  position: absolute;
+  font-size: 1.9vw;
+  font-weight: 500;
+  color: #060602;
+  left: 28vw;
+  width: 10vw;
+  text-align: center;
+  opacity: 0;
+  animation: popup 0.5s ease-in;
+}
+
+#song4 {
+  position: absolute;
+}
+
+#song4 .popup4 {
+  position: absolute;
+  font-size: 1.9vw;
+  font-weight: 500;
+  color: #060602;
+  left: 1vw;
+  top: 14vw;
+  width: 10vw;
+  text-align: center;
+  opacity: 0;
+  animation: popup 0.5s ease-in;
+}
+
+#song5 {
+  position: absolute;
+}
+
+#song5 .popup5 {
+  position: absolute;
+  font-size: 1.9vw;
+  font-weight: 500;
+  color: #060602;
+  left: 14vw;
+  top: 14vw;
+  width: 10vw;
+  text-align: center;
+  opacity: 0;
+  animation: popup 0.5s ease-in;
+}
+
+@keyframes popup {
+0% 		{ transform: translateY(0px) scale(0.5); opacity: 0.5; }
+10% 	{ transform: translateY(0px) scale(1); opacity: 1;   }
+50% 	{ opacity: 1; }
+100%	{ transform: translateY(-5.5vw); opacity: 0; }
+}
+
+.dictophone {
+  grid-area: dictophone;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #028642;
+}
+
+.kolesiko1 {
+  width: 11vw;
+  height: 11vw;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url("../images/kolesiko.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -0.7vw;
+  left: -1vw;
+  animation: spin 3s linear reverse infinite;
+  animation-play-state: paused;
+}
+
+.kolesiko2 {
+  width: 11vw;
+  height: 11vw;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url("../images/kolesiko.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -0.7vw;
+  left: 11vw;
+  animation: spin 3s linear infinite;
+  animation-play-state: paused;
+}
+
+.run {
+  animation-play-state: running;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);};
+}
+
+.bottom {
+  width: 100%;
+  height: 9vw;
+  background-image: url("../images/dictophone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 12.8vw;
+}
+
+.knopochka1 {
+  width: 2.6vw;
+  height: 2.6vw;
+  background-image: url("../images/knopochka1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: -7.6vw 2vw;
+}
+
+.knopochka2 {
+  width: 2.6vw;
+  height: 2.6vw;
+  border-radius: 50%;
+  background-color: #FF994D;
+  margin: 8.2vw 2vw;
+  cursor: pointer;
+}
+
+.paper {
+  grid-area: paper;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+  transition: all 0.3s;
+}
+
+.list {
+  width: 16vw;
+  height: 100%;
+  background-color: #F0F0F0;
+  border: 0.6vw solid #060602;
+}
+
+.type-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vw;
+}
+
+.type1 {
+  width: 24ch;
+  font-size: 20pt;
+  font-weight: 500;
+  color: #060602;
+  overflow: hidden;
+  animation: border 0.75s step-end infinite, type 5s steps(24);
+  animation-play-state: paused;
+}
+
+.type-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vw;
+}
+
+.type2 {
+  width: 24ch;
+  font-size: 19pt;
+  font-weight: 500;
+  color: #060602;
+  overflow: hidden;
+  animation: border 0.75s step-end infinite, type 5s steps(24);
+  animation-play-state: paused;
+  animation-delay: 0s;
+}
+
+.none {
+  display: none;
+}
+
+.type-run {
+  border-right: 4px solid #FF994D;
+  animation-play-state: running;
+}
+
+@keyframes border {
+  0% {border-color: #FF994D;};
+  50% {border-color: transparent;}
+  100% {border-color: #FF994D;};
+}
+
+@keyframes type {
+  from {
+    width: 0%;
+  }
+}
+
+.pencil {
+  grid-area: pencil;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+  background-image: url("../images/pencil.svg");
+  background-size: 2vw 13vw;
+  background-repeat: no-repeat;
+  background-position: 0 8vw;
+  transition: all 0.3s;
+}
+
+.knopki {
+  grid-area: knopki;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+  border: 0.6vw solid #060602;
+  transition: all 0.3s;
+}
+
+.screenon {
+  width: 13vw;
+  height: 4.7vw;
+  margin: 1vw 1.25vw;
+  background-image: url("../images/screenon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: tsoizhiv 0.5s linear alternate infinite;
+}
+
+@keyframes tsoizhiv {
+  0% {opacity: 0%;};
+  100% {opacity: 100%;};
+}
+
+.block-knopochki {
+  width: 13vw;
+  height: 12.6vw;
+  margin: -0.6vw 1.25vw;
+  border: 0.3vw solid #060602;
+  display: flex;
+  transition: all 0.3s;
+}
+
+.container-knopochki {
+  width: 11.4vw;
+  height: 11.4vw;
+  margin: 0.5vw 0.6vw;
+}
+
+.knopochki {
+  width: 2.6vw;
+  height: 2.6vw;
+  display: inline-block;
+  background-color: #F0f0f0;
+  border: 0.3vw solid #060602;
+  cursor: pointer;
+}
+
+.kn17 {
+  border: none;
+  background-color: #5092CE;
+}
+
+.kn18 {
+  border: none;
+  background-color: #FF994D;
+}
+
+.button2 {
+  width: 4.5vw;
+  height: 4.5vw;
+  margin: -15vw 14.8vw;
+  background-image: url("../images/knopka-orange.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.block-pugovki {
+  width: 4.6vw; 
+  height: 8.2vw;
+  margin: 16.8vw 14.7vw;
+  display: flex;
+}
+
+.pugovka {
+  width: 4.6vw;
+  height: 2.4vw;
+  border: 0.3vw solid #060602;
+  margin-top: 0.5vw;
+  cursor: grab;
+}
+
+.way {
+  width: 3vw;
+  height: 0.3vw;
+  background-color: #060602;
+  margin: 0.8vw 0.5vw;
+}
+
+.o {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: #060602;
+  margin: -1.5vw 0.2vw;
+}
+
+.screenoff {
+  width: 13vw;
+  height: 4.7vw;
+  border: 0.3vw solid #060602;
+  margin: -34.1vw 1.3vw;
+}
+
+.footer {
+  grid-area: footer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #F0F0F0;
+  transition: all 0.3s;
+}
+
+.footer p:nth-of-type(1) {
+  margin-top: 5vw;
+}
+
+.footer p:nth-of-type(2) {
+  margin: -2.2vw 41.3vw;
+}
+
+.logo {
+  width: 16vw;
+  height: 7vw;
+  background-image: url('../images/logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+  margin-top: -2vw;
+}
+
+.ghost {
+  position: absolute;
+  z-index: 10;
+  top: 53vw;
+  left: 97vw;
+  width: 34vw;
+  height: 34vw;
+  background-image: url("../images/ghost.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: ghost 1s linear;
+  transition: all 5s;
+  animation-play-state: paused;
+}
+
+.fly {
+  animation-play-state: running;
+}
+
+.stop {
+  animation-play-state: paused;
+}
+
+@keyframes ghost {
+  0% {top: 50vw; left: 97vw;}  
+  50% {top: 26vw; left: 48vw;}
+  100% {top: -32vw; left: 56vw; transform: rotate(80deg)}
+}
+
+.frame {
+  display: none;
+}
+
+.black {
+  background-color: #060602;
+}
+
+.pink-border {
+  border: 0.6vw solid #F394BE;
+}
+
+
+

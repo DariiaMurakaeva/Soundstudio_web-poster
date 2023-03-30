@@ -1,0 +1,543 @@
+/* 1280-1330 */
+@media only screen and (min-width: 1280px) and (max-width: 1427px) {
+    .button1 {
+        width: 2.3vw;
+    }
+    .block-thingies {
+        width: 13.2vw;
+    }
+    .block-rychagi {
+        width: 15vw;
+    }
+    .container-knopochki {
+        margin: 0.8vw;
+    }
+    .knopochki {
+        width: 2.4vw;
+        height: 2.4vw;
+    }
+    .type-container1 {
+        margin: 2vw 1.6vw;
+    }
+    .type-container2 {
+        margin: 1.6vw 1.4vw;
+    }
+}
+
+/* 1024-1279 */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    p {
+        font-size: 16pt;
+    }
+    .block-kvadratiki {
+        margin: 1.3vw 1.2vw; 
+    }
+    .button1 {
+        width: 2.3vw;
+    }
+    .block-thingies {
+        width: 13.2vw;
+    }
+    .block-rychagi {
+        width: 15vw;
+    }
+    .container-knopochki {
+        margin: 0.8vw;
+    }
+    .knopochki {
+        width: 2.4vw;
+        height: 2.4vw;
+    }
+    .type-container1 {
+        margin: 2vw 1.6vw;
+    }
+    .type-container2 {
+        margin: 1.6vw 1.4vw;
+    }
+    .type1 {
+        font-size: 15pt;
+    }
+    .type2 {
+        font-size: 15pt;
+    }
+    .container-klavishi div:nth-of-type(1) {
+        left: 4vw;
+    }
+    .container-klavishi div:nth-of-type(2) {
+        left: 6.5vw;
+    }
+    .container-klavishi div:nth-of-type(3) {
+        left: 11.3vw;
+    }
+    .container-klavishi div:nth-of-type(4) {
+        left: 13.8vw;
+    }
+    .container-klavishi div:nth-of-type(5) {
+        left: 16.4vw;
+    }
+    .container-klavishi div:nth-of-type(6) {
+        left: 21.3vw;
+    }
+    .container-klavishi div:nth-of-type(7) {
+        left: 24vw;
+    }
+    .container-klavishi div:nth-of-type(11) {
+        left: 38.7vw;
+    }
+    .container-klavishi div:nth-of-type(12) {
+        left: 41.2vw;
+    }
+    .container-klavishi div:nth-of-type(13) {
+        left: 46.1vw;
+    }
+    .container-klavishi div:nth-of-type(14) {
+        left: 48.7vw;
+    }
+    .container-klavishi div:nth-of-type(15) {
+        left: 51.2vw;
+    }
+    .container-klavishi div:nth-of-type(16) {
+        left: 56.1vw;
+    }
+    .container-klavishi div:nth-of-type(17) {
+        left: 58.6vw;
+    }
+}
+
+/* 834-1023 */
+@media only screen and (min-width: 834px) and (max-width: 1023px) {
+    p {
+        font-size: 16pt;
+    }
+    .button1 {
+        width: 2.3vw;
+    }
+    .block-thingies {
+        width: 13.6vw;
+    }
+    .block-rychagi {
+        width: 15vw;
+    }
+    .container-knopochki {
+        margin: 0.7vw;
+    }
+    .knopochki {
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+    .type-container1 {
+        margin: 2vw 1.6vw;
+    }
+    .type-container2 {
+        margin: 1.6vw 1.4vw;
+    }
+    .type1 {
+        font-size: 15pt;
+    }
+    .type2 {
+        font-size: 15pt;
+    }
+    .tiles {
+        margin-right: -0.5vw;
+    }
+    .container-klavishi div:nth-of-type(1) {
+        left: 4vw;
+    }
+    .container-klavishi div:nth-of-type(2) {
+        left: 6.5vw;
+    }
+    .container-klavishi div:nth-of-type(3) {
+        left: 11.3vw;
+    }
+    .container-klavishi div:nth-of-type(4) {
+        left: 13.8vw;
+    }
+    .container-klavishi div:nth-of-type(5) {
+        left: 16.4vw;
+    }
+    .container-klavishi div:nth-of-type(6) {
+        left: 21.3vw;
+    }
+    .container-klavishi div:nth-of-type(7) {
+        left: 24vw;
+    }
+    .container-klavishi div:nth-of-type(11) {
+        left: 38.7vw;
+    }
+    .container-klavishi div:nth-of-type(12) {
+        left: 41.2vw;
+    }
+    .container-klavishi div:nth-of-type(13) {
+        left: 46.1vw;
+    }
+    .container-klavishi div:nth-of-type(14) {
+        left: 48.7vw;
+    }
+    .container-klavishi div:nth-of-type(15) {
+        left: 51.2vw;
+    }
+    .container-klavishi div:nth-of-type(16) {
+        left: 56.1vw;
+    }
+    .container-klavishi div:nth-of-type(17) {
+        left: 58.6vw;
+    }
+}
+
+/* 833 */
+@media only screen and (max-width: 833px) {
+    p {
+        font-size: 12pt;
+    }
+    .button1 {
+        margin: 0vw;
+        width: 2vw;
+    }
+    .kvadratik {
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+    .block-thingies {
+        width: 13.6vw;
+    }
+    .thingie {
+        margin-right: 0.6vw;
+    }
+    .block-rychagi {
+        width: 15vw;
+    }
+    .rychag {
+        margin-right: 0.6vw;
+    }
+    .block-krutilki {
+        margin: -5.3vw 30vw;
+        width: 16vw;
+    }
+    .container-knopochki {
+        margin: 1vw;
+    }
+    .knopochki {
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+    .type-container1 {
+        margin: 2vw 1.6vw;
+    }
+    .type-container2 {
+        margin: 1.6vw 1.4vw;
+    }
+    .type1 {
+        font-size: 15pt;
+    }
+    .type2 {
+        font-size: 15pt;
+    }
+    .tiles {
+        margin-right: -0.5vw;
+    }
+    .container-klavishi div:nth-of-type(1) {
+        left: 4vw;
+    }
+    .container-klavishi div:nth-of-type(2) {
+        left: 6.5vw;
+    }
+    .container-klavishi div:nth-of-type(3) {
+        left: 11.3vw;
+    }
+    .container-klavishi div:nth-of-type(4) {
+        left: 13.8vw;
+    }
+    .container-klavishi div:nth-of-type(5) {
+        left: 16.4vw;
+    }
+    .container-klavishi div:nth-of-type(6) {
+        left: 21.3vw;
+    }
+    .container-klavishi div:nth-of-type(7) {
+        left: 24vw;
+    }
+    .container-klavishi div:nth-of-type(11) {
+        left: 38.7vw;
+    }
+    .container-klavishi div:nth-of-type(12) {
+        left: 41.2vw;
+    }
+    .container-klavishi div:nth-of-type(13) {
+        left: 46.1vw;
+    }
+    .container-klavishi div:nth-of-type(14) {
+        left: 48.7vw;
+    }
+    .container-klavishi div:nth-of-type(15) {
+        left: 51.2vw;
+    }
+    .container-klavishi div:nth-of-type(16) {
+        left: 56.1vw;
+    }
+    .container-klavishi div:nth-of-type(17) {
+        left: 58.6vw;
+    }
+}
+
+/* 767 */
+@media only screen and (max-width: 767px) {
+    .knopochki {
+        width: 2.1vw;
+        height: 2.1vw;
+    }
+    .tiles {
+        margin-right: -0.7vw;
+    }
+}
+
+/* 600 */
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 10pt;
+    }
+    .container-kvadratiki {
+        width: 16vw;
+        height: 10vw;
+    }
+    .kvadratik {
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+    .kv26, .kv27, .kv28, .kv29, .kv30 {
+        display: none;
+    }
+    .button1 {
+        margin: 0vw;
+        width: 2vw;
+    }
+    .shtuka {
+        width: 5vw;
+        height: 5vw;
+    }
+    .block-thingies {
+        width: 13.6vw;
+    }
+    .thingie {
+        margin-right: 0.6vw;
+    }
+    .block-rychagi {
+        width: 15vw;
+    }
+    .rychag {
+        margin-right: 0.6vw;
+    }
+    .block-krutilki {
+        margin: -5.3vw 30vw;
+        width: 16vw;
+    }
+    .container-knopochki {
+        margin: 0.7vw;
+    }
+    .knopochki {
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+    .type-container1 {
+        margin: 2vw 1.6vw;
+    }
+    .type-container2 {
+        margin: 1.6vw 1.4vw;
+    }
+    .type1 {
+        font-size: 9pt;
+    }
+    .type2 {
+        font-size: 8pt;
+    }
+    .tiles {
+        margin-right: -0.7vw;
+    }
+    .container-klavishi div:nth-of-type(1) {
+        left: 4vw;
+    }
+    .container-klavishi div:nth-of-type(2) {
+        left: 6.5vw;
+    }
+    .container-klavishi div:nth-of-type(3) {
+        left: 11.3vw;
+    }
+    .container-klavishi div:nth-of-type(4) {
+        left: 13.8vw;
+    }
+    .container-klavishi div:nth-of-type(5) {
+        left: 16.4vw;
+    }
+    .container-klavishi div:nth-of-type(6) {
+        left: 21.3vw;
+    }
+    .container-klavishi div:nth-of-type(7) {
+        left: 24vw;
+    }
+    .container-klavishi div:nth-of-type(11) {
+        left: 38.7vw;
+    }
+    .container-klavishi div:nth-of-type(12) {
+        left: 41.2vw;
+    }
+    .container-klavishi div:nth-of-type(13) {
+        left: 46.1vw;
+    }
+    .container-klavishi div:nth-of-type(14) {
+        left: 48.7vw;
+    }
+    .container-klavishi div:nth-of-type(15) {
+        left: 51.2vw;
+    }
+    .container-klavishi div:nth-of-type(16) {
+        left: 56.1vw;
+    }
+    .container-klavishi div:nth-of-type(17) {
+        left: 58.6vw;
+    }
+}
+
+/* 547 */
+@media only screen and (max-width: 767px) {
+    .tiles {
+        margin-right: -0.8vw;
+    }
+}
+
+/* 477 */
+@media only screen and (max-width: 767px) {
+    .tiles {
+        margin-right: -1vw;
+    }
+    .knopochki {
+        width: 2vw;
+        height: 2vw;
+    }
+    .kn13, .kn14, .kn15, .kn16 {
+        display: none;
+    }
+    .btnnone {
+        display: none;
+    }
+}
+
+/* <=400 portrait */
+@media only screen and (max-device-width: 415px) and (orientation: portrait) {
+    .workspace {
+        display: none;
+    }
+    .frame {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50%;
+        width: 70vw;
+        height: 36vw;
+        background-image: url("../images/alert.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+/* <=400 landscape */
+@media only screen and (max-device-width: 415px) and (orientation: landscape) {
+    p {
+        font-size: 8pt;
+    }
+    .container-kvadratiki {
+        width: 16vw;
+        height: 10vw;
+    }
+    .kvadratik {
+        width: 1.8vw;
+        height: 2.4vw;
+    }
+    .kv25, .kv26, .kv27, .kv28, .kv29, .kv30 {
+        display: none;
+    }
+    .button1 {
+        width: 2vw;
+    }
+    .shtuka {
+        width: 5vw;
+        height: 5vw;
+    }
+    .block-thingies {
+        width: 13.6vw;
+    }
+    .thingie {
+        margin-right: 0.6vw;
+    }
+    .block-rychagi {
+        width: 15vw;
+    }
+    .rychag {
+        margin-right: 0.6vw;
+    }
+    .block-krutilki {
+        margin: -5.3vw 30vw;
+        width: 16vw;
+    }
+    .container-knopochki {
+        margin: 0.7vw;
+    }
+    .knopochki {
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+    .type-container1 {
+        margin: 2vw 1.6vw;
+    }
+    .type-container2 {
+        margin: 1.6vw 1.4vw;
+    }
+    .type1 {
+        font-size: 9pt;
+    }
+    .type2 {
+        font-size: 8pt;
+    }
+    .tiles {
+        margin-right: -1vw;
+    }
+    .container-klavishi div:nth-of-type(1) {
+        left: 4vw;
+    }
+    .container-klavishi div:nth-of-type(2) {
+        left: 6.5vw;
+    }
+    .container-klavishi div:nth-of-type(3) {
+        left: 11.3vw;
+    }
+    .container-klavishi div:nth-of-type(4) {
+        left: 13.8vw;
+    }
+    .container-klavishi div:nth-of-type(5) {
+        left: 16.4vw;
+    }
+    .container-klavishi div:nth-of-type(6) {
+        left: 21.3vw;
+    }
+    .container-klavishi div:nth-of-type(7) {
+        left: 24vw;
+    }
+    .container-klavishi div:nth-of-type(11) {
+        left: 38.7vw;
+    }
+    .container-klavishi div:nth-of-type(12) {
+        left: 41.2vw;
+    }
+    .container-klavishi div:nth-of-type(13) {
+        left: 46.1vw;
+    }
+    .container-klavishi div:nth-of-type(14) {
+        left: 48.7vw;
+    }
+    .container-klavishi div:nth-of-type(15) {
+        left: 51.2vw;
+    }
+    .container-klavishi div:nth-of-type(16) {
+        left: 56.1vw;
+    }
+    .container-klavishi div:nth-of-type(17) {
+        left: 58.6vw;
+    }
+}
